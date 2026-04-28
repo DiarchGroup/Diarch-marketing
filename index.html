@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diarch Group | Digital Innovation & Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600&family=Sora:wght@300;400&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app" class="min-h-screen bg-[#050505] selection:bg-[#FF4500] selection:text-white">
+
+        <div class="noise-overlay"></div>
+
+
+        <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-8">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <a href="#" id="nav-logo-link" class="flex items-center gap-3 group">
+                    <div
+                        class="w-10 h-10 rounded-lg overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
+                        <img src="/logo.png" alt="Marketing Logo" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-2xl font-semibold tracking-tighter"
+                        style="font-family: 'Outfit', sans-serif;">Diarch
+                        Marketing</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" id="nav-about-link"
+                        class="text-sm text-gray-400 hover:text-white transition-colors duration-300">About</a>
+                    <a href="#works" id="nav-works-link"
+                        class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Services</a>
+                    <a href="#expertise" id="nav-expertise-link"
+                        class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Ecosystem</a>
+                    <a href="#team" id="nav-team-link"
+                        class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Team</a>
+                </div>
+
+                <a href="/connect.html" id="nav-cta-link"
+                    class="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium bg-white text-black hover:scale-105 hover:bg-gray-100 transition-all duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+
+
+        <section
+            class="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20 bg-[#050505]">
+
+            <div class="absolute inset-0 z-0 pointer-events-none select-none">
+                <div class="absolute top-0 left-0 w-full h-full">
+                    <img src="/hero_bg.jpg" alt="Team Collaboration"
+                        class="w-full h-full object-cover object-center brightness-[0.5] grayscale-[20%]">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-[#050505]/80 via-transparent to-[#050505] z-10">
+                </div>
+            </div>
+
+
+            <div
+                class="container mx-auto px-6 relative z-20 text-center flex flex-col items-center justify-center h-full">
+                <div id="hero-content-wrapper" class="max-w-4xl mx-auto">
+                    <div class="reveal">
+                        <h1
+                            class="text-5xl md:text-8xl lg:text-9xl font-bold leading-[0.95] tracking-tight mb-8 text-white/90 font-serif">
+                            Build Influence, <br class="hidden md:block" /> Drive Growth.
+                            <span class="block text-2xl md:text-3xl font-light text-[#ffe0e0] mt-6"
+                                style="font-family: 'Sora', sans-serif; word-spacing: 0.15em;">Marketing that turns
+                                attention into revenue.</span>
+                        </h1>
+                    </div>
+
+
+
+                    <div class="reveal flex flex-col items-center gap-6" style="transition-delay: 400ms;">
+                        <div class="relative group cursor-pointer">
+                            <div
+                                class="absolute inset-0 bg-[#FF4500]/20 blur-xl rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-500">
+                            </div>
+                            <div
+                                class="relative border border-white/20 bg-white/5 backdrop-blur-sm px-6 py-2 rounded-full flex items-center gap-3 text-xs md:text-sm text-white/80 uppercase tracking-widest hover:bg-white/10 transition-colors duration-300">
+                                <span>Diarch Group</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-4 text-[10px] md:text-xs text-white/40 uppercase tracking-widest mt-8 font-mono">
+                            <span id="current-time">11:11 PM</span>
+                            <span class="w-px h-3 bg-white/20"></span>
+                            <span>IND</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-40 relative overflow-hidden bg-[#050505]">
+            <!-- Background element -->
+            <div
+                class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/[0.02] to-transparent pointer-events-none">
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <p class="text-[#FF4500] uppercase tracking-[0.4em] text-[10px] mb-8 font-medium">About the
+                            Group</p>
+                        <h2 class="text-6xl md:text-8xl leading-[0.9] font-serif mb-12">
+                            Elegance is <br />
+                            <span class="text-white/20 font-bold">Refusal.</span>
+                        </h2>
+                        <p class="text-xl text-gray-400 leading-relaxed max-w-lg font-light">
+                            We are a full-service marketing agency offering end-to-end marketing solutions designed to
+                            help businesses achieve measurable growth. As your strategic partner, we go beyond
+                            traditional marketing to deliver innovative strategies that align with your goals and
+                            deliver real results.<br><br>
+
+                            Our comprehensive services cover every aspect of marketing — from branding and digital
+                            campaigns to strategy and execution — enabling our clients to focus on their core business
+                            while we drive their brand’s success.
+                        </p>
+                    </div>
+                    <div class="relative reveal" style="transition-delay: 200ms;">
+                        <div class="aspect-square rounded-3xl overflow-hidden border border-white/10 group shadow-2xl">
+                            <img src="/about_image.jpg" alt="Diarch Group Philosophy"
+                                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100">
+                        </div>
+                        <!-- Floating stat card -->
+                        <div
+                            class="absolute -bottom-10 -left-10 bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl hidden md:block shadow-2xl">
+                            <span class="block text-4xl font-serif mb-2">10+</span>
+                            <span class="text-[10px] uppercase tracking-widest text-white/40">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="works" class="py-40 relative overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="reveal mb-32">
+                    <h2 class="text-5xl md:text-7xl text-center font-serif">
+                        Why choose <br />
+                        <span class="italic">Diarch ?</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Card 1 - Red -->
+                    <div class="parallax-card-down">
+                        <div
+                            class="reveal bg-[#FF4500] rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl hover:shadow-[0_20px_50px_rgba(255,69,0,0.3)] transition-all duration-500 group cursor-pointer">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-black/10 flex items-center justify-center group-hover:rotate-45 transition-transform duration-500">
+                                    <iconify-icon icon="lucide:star" class="text-black text-2xl"></iconify-icon>
+                                </div>
+                                <span
+                                    class="text-black font-medium text-sm border border-black/20 px-3 py-1 rounded-full">01</span>
+                            </div>
+
+                            <div>
+                                <h3 class="text-4xl md:text-5xl text-black mb-4 leading-none tracking-tight font-serif">
+                                    Emerging<br /> Marketing Solutions
+                                </h3>
+                                <p class="text-black/70 text-lg leading-snug">
+                                    From strategy and branding to execution, we deliver complete marketing solutions
+                                    designed to scale your business. </p>
+                            </div>
+
+                            <div class="w-full h-px bg-black/10 mt-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Black -->
+                    <div class="parallax-card-up md:mt-24">
+                        <div class="reveal bg-[#111] border border-white/10 rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl group cursor-pointer hover:border-white/30 transition-all duration-500"
+                            style="transition-delay: 150ms;">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                    <iconify-icon icon="lucide:arrow-right"
+                                        class="text-white text-2xl -rotate-45"></iconify-icon>
+                                </div>
+                                <span
+                                    class="text-white/50 font-medium text-sm border border-white/10 px-3 py-1 rounded-full">02</span>
+                            </div>
+
+                            <div>
+                                <h3 class="text-4xl md:text-5xl text-white mb-4 leading-none tracking-tight font-serif">
+                                    Expert Team & <br />Innovation
+                                </h3>
+                                <p class="text-gray-400 text-lg leading-snug">
+                                    A multidisciplinary team leveraging creativity, strategy, and the latest innovations
+                                    to drive impactful results.
+                                </p>
+                            </div>
+
+                            <div class="w-full h-px bg-white/10 mt-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Gold -->
+                    <div class="parallax-card-down mt-8 md:mt-[-24]">
+                        <div class="reveal bg-[#D4AF37] rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl hover:shadow-[0_20px_50px_rgba(212,175,55,0.3)] transition-all duration-500 group cursor-pointer"
+                            style="transition-delay: 250ms;">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-black/10 flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                    <iconify-icon icon="lucide:bar-chart-3" class="text-black text-2xl"></iconify-icon>
+                                </div>
+                                <span
+                                    class="text-black font-medium text-sm border border-black/20 px-3 py-1 rounded-full">03</span>
+                            </div>
+
+                            <div>
+                                <h3 class="text-4xl md:text-5xl text-black mb-4 leading-none tracking-tight font-serif">
+                                    Data-Driven <br />Performance
+                                </h3>
+                                <p class="text-black/70 text-lg leading-snug">
+                                    We use advanced analytics to optimize campaigns, ensuring measurable growth and
+                                    maximum ROI. </p>
+                            </div>
+
+                            <div class="w-full h-px bg-black/10 mt-8"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 - Dark Grey -->
+                    <div class="parallax-card-up mt-8">
+                        <div class="reveal bg-[#1a1a1a] border border-white/5 rounded-3xl p-8 md:p-12 aspect-[4/5] flex flex-col justify-between shadow-2xl group cursor-pointer hover:border-white/20 transition-all duration-500"
+                            style="transition-delay: 350ms;">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                    <iconify-icon icon="lucide:heart" class="text-white text-2xl"></iconify-icon>
+                                </div>
+                                <span
+                                    class="text-white/50 font-medium text-sm border border-white/10 px-3 py-1 rounded-full">04</span>
+                            </div>
+
+                            <div>
+                                <h3 class="text-4xl md:text-5xl text-white mb-4 leading-none tracking-tight font-serif">
+                                    Seamless Integration & <br />Transparency
+                                </h3>
+                                <p class="text-gray-400 text-lg leading-snug">
+                                    Unified marketing across all channels with clear communication, keeping you informed
+                                    every step of the way. </p>
+                            </div>
+
+                            <div class="w-full h-px bg-white/10 mt-8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Pattern -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-10 pointer-events-none"
+                style="background-image: radial-gradient(circle, #FF4500 1px, transparent 1px); background-size: 60px 60px;">
+            </div>
+        </section>
+
+
+
+        <!-- Mission Section -->
+        <section id="expertise" class="py-32 relative">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center reveal">
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl leading-tight text-white/90 mb-12 font-serif">
+                        Our ecosystem extends across specialized sub-brands,
+                    </h2>
+                    <p class="text-xl md:text-2xl text-gray-500 leading-relaxed font-light">
+                        each dedicated to a distinct domain of digital innovation.
+                    </p>
+                </div>
+
+
+                <div class="mt-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Diarch Go -->
+                    <div class="flex flex-col items-center gap-8 reveal" style="transition-delay: 200ms;">
+                        <a href="https://www.diarchgo.com/" target="_blank" class="block w-full group">
+                            <div
+                                class="cursor-pointer transition-all duration-500 opacity-80 group-hover:opacity-100 group-hover:scale-105 mb-8">
+                                <div
+                                    class="w-48 h-24 overflow-hidden rounded-xl bg-[#0a0a0a] border border-white/5 flex items-center justify-center p-4 mx-auto relative group-hover:border-white/20 transition-colors">
+                                    <!-- Background Glow (White) -->
+                                    <div
+                                        class="absolute inset-0 bg-white/10 blur-[30px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                                    </div>
+                                    <div class="w-full h-full relative z-10"
+                                        style="background-image: url('/diarchgo.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#0f0f0f] border border-white/5 p-6 rounded-2xl w-full text-left group-hover:translate-y-[-8px] group-hover:border-white/10 group-hover:shadow-[0_15px_40px_rgba(0,0,0,0.5)] transition-all duration-500">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <iconify-icon icon="lucide:navigation"
+                                        class="text-white/20 group-hover:text-white/60 transition-colors"></iconify-icon>
+                                    <span class="text-[10px] uppercase tracking-[0.2em] text-white/40">Quick
+                                        E-Commerce</span>
+                                </div>
+                                <p class="text-[13px] text-gray-500 leading-relaxed font-light">
+                                    Fast, scalable e-commerce solutions built to maximize conversions and deliver
+                                    seamless
+                                    digital experiences. </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Diarch International -->
+                    <div class="flex flex-col items-center gap-8 reveal" style="transition-delay: 300ms;">
+                        <a href="https://diarchinternational.com/" target="_blank" class="block w-full group">
+                            <div
+                                class="cursor-pointer transition-all duration-500 opacity-80 group-hover:opacity-100 group-hover:scale-105 mb-8">
+                                <div
+                                    class="w-48 h-24 overflow-hidden rounded-xl bg-[#0a0a0a] border border-white/5 flex items-center justify-center p-4 mx-auto relative group-hover:border-white/20 transition-colors">
+                                    <!-- Background Glow (White) -->
+                                    <div
+                                        class="absolute inset-0 bg-white/10 blur-[30px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                                    </div>
+                                    <div class="w-full h-full relative z-10"
+                                        style="background-image: url('/diarch_international.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#0f0f0f] border border-white/5 p-6 rounded-2xl w-full text-left group-hover:translate-y-[-8px] group-hover:border-white/10 group-hover:shadow-[0_15px_40px_rgba(0,0,0,0.5)] transition-all duration-500">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <iconify-icon icon="lucide:globe"
+                                        class="text-white/20 group-hover:text-white/60 transition-colors"></iconify-icon>
+                                    <span class="text-[10px] uppercase tracking-[0.2em] text-white/40">Import &
+                                        Export</span>
+                                </div>
+                                <p class="text-[13px] text-gray-500 leading-relaxed font-light">
+                                    Enabling global trade through robust digital infrastructure and streamlined
+                                    import–export solutions. </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Diarch Homes -->
+                    <div class="flex flex-col items-center gap-8 reveal" style="transition-delay: 400ms;">
+                        <a href="https://www.diarchhomes.com/" target="_blank" class="block w-full group">
+                            <div
+                                class="cursor-pointer transition-all duration-500 opacity-80 group-hover:opacity-100 group-hover:scale-105 mb-8">
+                                <div
+                                    class="w-48 h-24 overflow-hidden rounded-xl bg-[#0a0a0a] border border-white/5 flex items-center justify-center p-4 mx-auto relative group-hover:border-white/20 transition-colors">
+                                    <!-- Background Glow (White) -->
+                                    <div
+                                        class="absolute inset-0 bg-white/10 blur-[30px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                                    </div>
+                                    <div class="w-full h-full relative z-10"
+                                        style="background-image: url('/diarch_homes.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#0f0f0f] border border-white/5 p-6 rounded-2xl w-full text-left group-hover:translate-y-[-8px] group-hover:border-white/10 group-hover:shadow-[0_15px_40px_rgba(0,0,0,0.5)] transition-all duration-500">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <iconify-icon icon="lucide:home"
+                                        class="text-white/20 group-hover:text-white/60 transition-colors"></iconify-icon>
+                                    <span class="text-[10px] uppercase tracking-[0.2em] text-white/40">Real
+                                        Estate</span>
+                                </div>
+                                <p class="text-[13px] text-gray-500 leading-relaxed font-light">
+                                    Transforming real estate with smart platforms, immersive discovery, and modern
+                                    living
+                                    solutions. </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Diarch Group -->
+                    <div class="flex flex-col items-center gap-8 reveal" style="transition-delay: 500ms;">
+                        <a href="https://diarchgroup.com/" target="_blank" class="block w-full group">
+                            <div
+                                class="cursor-pointer transition-all duration-500 opacity-80 group-hover:opacity-100 group-hover:scale-105 mb-8">
+                                <div
+                                    class="w-48 h-24 overflow-hidden rounded-xl bg-[#0a0a0a] border border-white/5 flex items-center justify-center p-4 mx-auto relative group-hover:border-white/20 transition-colors">
+                                    <!-- Background Glow (White) -->
+                                    <div
+                                        class="absolute inset-0 bg-white/10 blur-[30px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                                    </div>
+                                    <div class="w-full h-full relative z-10"
+                                        style="background-image: url('/diarch_group.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-[#0f0f0f] border border-white/5 p-6 rounded-2xl w-full text-left group-hover:translate-y-[-8px] group-hover:border-white/10 group-hover:shadow-[0_15px_40px_rgba(0,0,0,0.5)] transition-all duration-500">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <iconify-icon icon="lucide:layers"
+                                        class="text-white/20 group-hover:text-white/60 transition-colors"></iconify-icon>
+                                    <span class="text-[10px] uppercase tracking-[0.2em] text-white/40">Corporate
+                                        Parent</span>
+                                </div>
+                                <p class="text-[13px] text-gray-500 leading-relaxed font-light">
+                                    Strategically overseeing and powering the growth of our specialized digital
+                                    verticals. </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-40 relative overflow-hidden bg-[#0a0a0a]">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="reveal mb-32">
+                    <p class="text-[#FF4500] uppercase tracking-[0.4em] text-[10px] mb-8 font-medium">The Collective</p>
+                    <h2 class="text-5xl md:text-7xl font-serif text-white">
+                        Our <br />
+                        <span class="text-white/20 font-bold">Leadership.</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="reveal group" style="transition-delay: 100ms;">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-6 relative border border-white/5">
+                            <img src="/ceo.png" alt="Ranjan Kumar Ojha"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                                <div class="flex gap-4 text-xl">
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:linkedin"></iconify-icon>
+                                    </a>
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:twitter"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-serif mb-1 text-white/90">Ranjan Kumar Ojha</h3>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">Founder & CEO</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="reveal group" style="transition-delay: 200ms;">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-6 relative border border-white/5">
+                            <img src="/gm.png" alt="Abhinandan Kr Singh"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                                <div class="flex gap-4 text-xl">
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:linkedin"></iconify-icon>
+                                    </a>
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:twitter"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-serif mb-1 text-white/90">Abhinandan Kr Singh</h3>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">General Manager</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="reveal group" style="transition-delay: 300ms;">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-6 relative border border-white/5">
+                            <img src="/dmm.png" alt="Saurabh Kumar"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                                <div class="flex gap-4 text-xl">
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:linkedin"></iconify-icon>
+                                    </a>
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:twitter"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-serif mb-1 text-white/90">Saurabh Kumar</h3>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">Digital Marketing
+                            Manager</p>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="reveal group" style="transition-delay: 400ms;">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden mb-6 relative border border-white/5">
+                            <img src="/hr.png" alt="Gyanshree"
+                                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                                <div class="flex gap-4 text-xl">
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:linkedin"></iconify-icon>
+                                    </a>
+                                    <a href="#" class="text-white/60 hover:text-white transition-colors">
+                                        <iconify-icon icon="lucide:twitter"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-serif mb-1 text-white/90">Gyanshree</h3>
+                        <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">HR</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-40 relative overflow-hidden bg-[#050505]">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <p class="text-[#FF4500] uppercase tracking-[0.4em] text-[10px] mb-8 font-medium">Get in Touch
+                        </p>
+                        <h2 class="text-6xl md:text-8xl leading-[0.9] font-serif mb-8 text-white">
+                            Let's build <br />
+                            <span class="text-white/20 font-bold">Something.</span>
+                        </h2>
+
+                        <!-- Contact Us CTA Card -->
+                        <div class="reveal mt-12 mb-16" style="transition-delay: 100ms;">
+                            <div
+                                class="p-8 rounded-3xl bg-gradient-to-br from-[#FF4500] to-[#FF8C00] shadow-[0_20px_50px_rgba(255,69,0,0.3)] relative overflow-hidden group">
+                                <div class="relative z-10">
+                                    <h3 class="text-2xl font-serif text-black mb-2">Ready to transform your brand?</h3>
+                                    <p class="text-black/60 text-sm mb-6 max-w-xs">Partner with our team of digital
+                                        innovators and creators.</p>
+                                    <a href="/connect.html"
+                                        class="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-2xl text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-500">
+                                        Connect with us
+                                        <iconify-icon icon="lucide:arrow-right"
+                                            class="text-xl group-hover:translate-x-2 transition-transform"></iconify-icon>
+                                    </a>
+                                </div>
+                                <!-- Decorative element -->
+                                <iconify-icon icon="lucide:sparkles"
+                                    class="absolute -bottom-4 -right-4 text-9xl text-black/5 rotate-12 group-hover:scale-110 transition-transform duration-700"></iconify-icon>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
+                            <!-- Email Card -->
+                            <div class="reveal group" style="transition-delay: 200ms;">
+                                <div
+                                    class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-[#FF4500]/30 hover:bg-white/[0.08] transition-all duration-500 shadow-xl flex flex-row items-center gap-4 h-full">
+                                    <div
+                                        class="w-10 h-10 shrink-0 rounded-xl bg-[#FF4500]/10 flex items-center justify-center text-[#FF4500]">
+                                        <iconify-icon icon="lucide:mail" class="text-lg"></iconify-icon>
+                                    </div>
+                                    <div class="text-left">
+                                        <span
+                                            class="block text-[8px] uppercase tracking-[0.2em] text-white/30 font-medium mb-1">Email</span>
+                                        <a href="mailto:info@diarchmarketing.com"
+                                            class="block text-[10px] text-white hover:text-[#FF4500] transition-colors font-serif break-all">info@diarchmarketing.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Visit Card -->
+                            <div class="reveal group" style="transition-delay: 400ms;">
+                                <div
+                                    class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-[#FF4500]/30 hover:bg-white/[0.08] transition-all duration-500 shadow-xl flex flex-row items-center gap-4 h-full">
+                                    <div
+                                        class="w-10 h-10 shrink-0 rounded-xl bg-[#FF4500]/10 flex items-center justify-center text-[#FF4500]">
+                                        <iconify-icon icon="lucide:map-pin" class="text-lg"></iconify-icon>
+                                    </div>
+                                    <div class="text-left">
+                                        <span
+                                            class="block text-[8px] uppercase tracking-[0.2em] text-white/30 font-medium mb-1">Visit</span>
+                                        <p class="text-[10px] text-gray-400 font-serif leading-none">Patna, Bihar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal h-full flex flex-col justify-start pt-20" style="transition-delay: 200ms;">
+                        <div class="group w-full max-w-lg mx-auto">
+                            <a href="https://www.google.com/maps/place/Diarch+Group/@25.6154708,85.1160558,19.64z/data=!4m14!1m7!3m6!1s0x39ed597506a64473:0xf66db7448ec4adfb!2sDiarch+Group!8m2!3d25.6159701!4d85.1161008!16s%2Fg%2F11lcqx7ybt!3m5!1s0x39ed597506a64473:0xf66db7448ec4adfb!8m2!3d25.6159701!4d85.1161008!16s%2Fg%2F11lcqx7ybt?hl=en-GB&entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                                class="block relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500 shadow-2xl">
+                                <div class="absolute inset-0 bg-[#0a0a0a]">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.985!2d85.1161!3d25.6160!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed597506a64473%3A0xf66db7448ec4adfb!2sDiarch%20Group!5e0!3m2!1sen!2sin!4v1714241514000!5m2!1sen!2sin"
+                                        class="w-full h-full border-0 opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
+                                        style="filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);"
+                                        allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent p-10 flex flex-col justify-end pointer-events-none">
+                                    <h4 class="text-white text-xl font-serif mb-2">Our Headquarters</h4>
+                                    <p class="text-white/60 text-base font-light leading-relaxed">
+                                        Boring Road, Patna,<br>
+                                        Bihar, India
+                                    </p>
+                                    <div
+                                        class="mt-6 flex items-center gap-3 text-[#FF4500] text-xs uppercase tracking-[0.3em] font-bold">
+                                        Get Directions
+                                        <iconify-icon icon="lucide:external-link" class="text-lg"></iconify-icon>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Decoration -->
+            <div
+                class="absolute -bottom-20 -right-20 w-96 h-96 bg-[#FF4500] blur-[150px] opacity-10 pointer-events-none">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-20 border-t border-white/5 bg-[#050505] relative overflow-hidden">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+                    <div class="w-full md:w-auto">
+                        <h2
+                            class="text-[10vw] leading-[0.8] tracking-tighter text-white/10 font-bold select-none pointer-events-none uppercase">
+                            DIARCH GROUP.
+                        </h2>
+                    </div>
+
+                    <div class="flex flex-col gap-8 text-right">
+                        <div class="flex flex-col gap-4 text-gray-400">
+                            <a href="#" id="footer-ig-link" class="hover:text-white transition-colors">Instagram</a>
+                            <a href="#" id="footer-tw-link" class="hover:text-white transition-colors">Twitter</a>
+                            <a href="#" id="footer-li-link" class="hover:text-white transition-colors">LinkedIn</a>
+                        </div>
+                        <p class="text-sm text-gray-600">© 2026 Diarch Marketing. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
