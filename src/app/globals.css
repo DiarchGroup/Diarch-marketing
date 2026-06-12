@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Mappings to Next.js font variables */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-manrope), sans-serif;
+  /* Mapped to Manrope as per index.css override */
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-sora: var(--font-sora), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
+
+  /* Custom B2B Colors */
+  --color-bg: #050505;
+  --color-accent: #FF4500;
+  --color-gold: #D4AF37;
+  --color-card: #111111;
+
+  /* Floating Animations */
+  --animate-float-left: float-hand-left 12s ease-in-out infinite;
+  --animate-float-right: float-hand-right 14s ease-in-out infinite;
+
+  @keyframes float-hand-left {
+
+    0%,
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+
+    50% {
+      transform: translateY(-20px) rotate(2deg);
+    }
+  }
+
+  @keyframes float-hand-right {
+
+    0%,
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+
+    50% {
+      transform: translateY(20px) rotate(-2deg);
+    }
+  }
+}
+
+/* Global Reset & Base Layout */
+html,
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: var(--font-inter), sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4500;
+}
+
+/* Grainy Noise texture overlay */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+/* Scroll Reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Accent Neon glow borders */
+.neon-glow-border {
+  position: relative;
+}
+
+.neon-glow-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(45deg, #FF4500, #FF2D00, transparent, transparent);
+  border-radius: 16px;
+  z-index: -1;
+  opacity: 0.12;
+  filter: blur(5px);
+}
+
+/* Focus and hover glows for inputs and CTA buttons */
+.input-glow:focus {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.3);
+}
+
+.bg-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 69, 0, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
