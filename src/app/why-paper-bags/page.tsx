@@ -76,7 +76,7 @@ export default function WhyPaperBags() {
               <thead>
                 <tr className="border-b border-white/10 text-xs uppercase tracking-widest text-[#FF4500] font-mono">
                   <th className="pb-4">Metric</th>
-                  <th className="pb-4">DiArch Branded Carriers</th>
+                  <th className="pb-4">Diarch Branded Carriers</th>
                   <th className="pb-4">Online Ads (PPC/Display)</th>
                 </tr>
               </thead>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ShieldCheck, Leaf, Factory } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -15,7 +16,7 @@ export default function About() {
       name: "Ranjan Kumar Ojha",
       title: "Founder & CEO",
       image: "/ceo.png",
-      bio: "Pioneer in B2B packaging and sustainability. Ranjan founded DiArch to revolutionize offline media space by turning everyday packaging into highly visible marketing channels.",
+      bio: "Pioneer in B2B packaging and sustainability. Ranjan founded Diarch to revolutionize offline media space by turning everyday packaging into highly visible marketing channels.",
     },
     {
       name: "Abhinandan Kr Singh",
@@ -51,7 +52,7 @@ export default function About() {
               <span className="text-white/20 italic">Maximum Influence.</span>
             </h1>
             <p className="text-gray-400 text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              DiArch Marketing is an industrial-scale manufacturer specializing in custom-branded, eco-friendly paper bags that double as high-visibility mobile advertising carriers.
+              Diarch Marketing is an industrial-scale manufacturer specializing in custom-branded, eco-friendly paper bags that double as high-visibility mobile advertising carriers.
             </p>
           </Reveal>
         </div>
@@ -59,27 +60,28 @@ export default function About() {
         {/* Story Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-40">
           <Reveal>
-            <h2 className="text-3xl md:text-5xl font-outfit mb-8">The DiArch Transition</h2>
+            <h2 className="text-3xl md:text-5xl font-outfit mb-8">The Diarch Transition</h2>
             <div className="text-gray-400 font-light leading-relaxed space-y-6">
               <p>
-                Founded as a digital marketing innovator, DiArch Marketing recognized a growing market blindspot: digital fatigue. As online ads became more saturated and expensive, physical touchpoints remained highly engaging. At the same time, global environmental policies shifted away from single-use plastics.
+                Founded as a digital marketing innovator, Diarch Marketing recognized a growing market blindspot: digital fatigue. As online ads became more saturated and expensive, physical touchpoints remained highly engaging. At the same time, global environmental policies shifted away from single-use plastics.
               </p>
               <p>
                 We saw an opportunity to bridge the gap. By designing premium, strong, custom-branded paper bags, we transformed utility packaging into a high-visibility, eco-friendly marketing channel.
               </p>
               <p>
-                Today, DiArch operates high-capacity automatic paper bag manufacturing facilities. We supply bulk custom packaging to hyper-local delivery services, retail chains, dining sectors, and corporate conferences, turning packaging into a powerful brand asset.
+                Today, Diarch operates high-capacity automatic paper bag manufacturing facilities. We supply bulk custom packaging to hyper-local delivery services, retail chains, dining sectors, and corporate conferences, turning packaging into a powerful brand asset.
               </p>
             </div>
           </Reveal>
 
           <Reveal delay={200} className="relative">
-            <div className="aspect-[4/3] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+              <Image
                 src="/about_image.jpg"
                 alt="Automatic Bag Making Plants"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-[#FF4500] text-black px-8 py-6 rounded-2xl hidden md:block shadow-2xl">
@@ -145,11 +147,12 @@ export default function About() {
             {leadership.map((member, idx) => (
               <Reveal key={idx} delay={idx * 100} className="group">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 relative border border-white/5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                    fill
+                    sizes="(min-width: 1024px) 25vw, 50vw"
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
                     <div className="flex gap-4 text-lg">

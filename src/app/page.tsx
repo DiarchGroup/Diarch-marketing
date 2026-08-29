@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, TrendingUp, ShoppingBag, Leaf, Shield, Navigation, Globe, Layers } from "lucide-react";
 import HeroClock from "@/components/HeroClock";
 import Reveal from "@/components/Reveal";
@@ -12,11 +13,13 @@ export default function Home() {
         {/* Hero Background */}
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <div className="absolute top-0 left-0 w-full h-full">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/hero_bg.jpg"
               alt="Custom Paper Bag Manufacturing Showcase"
-              className="w-full h-full object-cover object-center brightness-[0.4] grayscale-[15%]"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center brightness-[0.4] grayscale-[15%]"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-transparent to-[#050505] z-10"></div>
@@ -73,10 +76,10 @@ export default function Home() {
               </h2>
               <div className="text-lg text-gray-400 leading-relaxed max-w-lg font-light space-y-6">
                 <p>
-                  We refuse plastics. We refuse low-impact advertising. DiArch Marketing is your premium B2B strategic partner, helping brands transition away from generic, eco-harmful packaging toward custom-designed paper bag marketing ecosystems.
+                  We refuse plastics. We refuse low-impact advertising. Diarch Marketing is your premium B2B strategic partner, helping brands transition away from generic, eco-harmful packaging toward custom-designed paper bag marketing ecosystems.
                 </p>
                 <p>
-                  Our advanced print technology enables brands like Blinkit, Swiggy, Zomato, and high-street fashion brands to treat their delivery bags as premium, high-impact media spaces. From heavy GSM luxury Kraft paper to sustainable loop-handle bags, we handle end-to-end design, manufacturing, and logistics.
+                  Our advanced print technology enables quick-commerce platforms, delivery brands, and high-street fashion brands to treat their delivery bags as premium, high-impact media spaces. From heavy GSM luxury Kraft paper to sustainable loop-handle bags, we handle end-to-end design, manufacturing, and logistics.
                 </p>
               </div>
               <div className="mt-10">
@@ -91,12 +94,13 @@ export default function Home() {
 
             <div className="relative">
               <Reveal delay={200}>
-                <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 group shadow-2xl">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="relative aspect-square rounded-3xl overflow-hidden border border-white/10 group shadow-2xl">
+                  <Image
                     src="/about_image.jpg"
                     alt="Sustainable Manufacturing Quality"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                   />
                 </div>
                 {/* Floating stat card */}
@@ -279,7 +283,7 @@ export default function Home() {
                     </span>
                   </div>
                   <p className="text-[13px] text-gray-500 leading-relaxed font-light">
-                    High-volume supply of flat and loop-handle food delivery bags optimized for quick commerce platforms (Zomato, Swiggy, Blinkit).
+                    High-volume supply of flat and loop-handle food delivery bags optimized for quick commerce platforms.
                   </p>
                 </div>
               </div>
@@ -316,7 +320,7 @@ export default function Home() {
               </div>
             </Reveal>
 
-            {/* Division 3: DiArch Retail Packs */}
+            {/* Division 3: Diarch Retail Packs */}
             <Reveal delay={400} className="flex flex-col items-center gap-8">
               <div className="w-full group">
                 <div className="cursor-pointer transition-all duration-500 opacity-80 group-hover:opacity-100 group-hover:scale-105 mb-8">
@@ -387,19 +391,20 @@ export default function Home() {
           <Reveal className="mb-16 text-center">
             <h3 className="text-3xl md:text-5xl font-outfit mb-4">Our Branded Packaging in the Wild</h3>
             <p className="text-gray-400 font-light max-w-xl mx-auto">
-              Realistic mockups displaying how DiArch partners with retail, grocery, and dining brands to elevate their offline marketing.
+              Realistic mockups displaying how Diarch partners with retail, grocery, and dining brands to elevate their offline marketing.
             </p>
           </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Bag 1 */}
             <Reveal delay={100} className="group cursor-pointer">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-500 bg-[#0f0f0f]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-500 bg-[#0f0f0f]">
+                <Image
                   src="/paper_bag_grocery.png"
                   alt="Grocery Eco Paper Bag"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <h4 className="text-lg font-outfit mt-4 mb-1">Eco Grocery Bag</h4>
@@ -408,12 +413,13 @@ export default function Home() {
 
             {/* Bag 2 */}
             <Reveal delay={200} className="group cursor-pointer">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-500 bg-[#0f0f0f]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-500 bg-[#0f0f0f]">
+                <Image
                   src="/paper_bag_retail.png"
                   alt="Fashion Boutique Gold Foil Paper Bag"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <h4 className="text-lg font-outfit mt-4 mb-1">Luxury Retail Bag</h4>
@@ -422,12 +428,13 @@ export default function Home() {
 
             {/* Bag 3 */}
             <Reveal delay={300} className="group cursor-pointer">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-500 bg-[#0f0f0f]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+              <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/5 hover:border-white/20 transition-all duration-500 bg-[#0f0f0f]">
+                <Image
                   src="/paper_bag_restaurant.png"
                   alt="White Delivery Bag"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <h4 className="text-lg font-outfit mt-4 mb-1">Gourmet Delivery Bag</h4>

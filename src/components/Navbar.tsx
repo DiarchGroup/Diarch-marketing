@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
@@ -42,10 +43,12 @@ export default function Navbar() {
           {/* Logo & Branding */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-lg overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/logo.png"
-                alt="DiArch Marketing Logo"
+                alt="Diarch Marketing Logo"
+                width={40}
+                height={40}
+                priority
                 className="w-full h-full object-cover"
               />
             </div>
