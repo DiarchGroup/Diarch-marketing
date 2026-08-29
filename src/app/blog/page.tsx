@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Calendar, User, Clock } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -45,7 +46,7 @@ export default function Blog() {
               Insights & News
             </p>
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 font-outfit">
-              DiArch <br />
+              Diarch <br />
               <span className="text-white/20 italic">Blog.</span>
             </h1>
             <p className="text-gray-400 text-lg font-light leading-relaxed max-w-2xl mx-auto">
@@ -64,11 +65,12 @@ export default function Blog() {
             >
               <div>
                 <div className="aspect-[16/10] overflow-hidden bg-[#0f0f0f] relative border-b border-white/5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 100vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute top-4 left-4 bg-[#FF4500] text-black px-3 py-1 rounded-full">
                     <span className="text-[9px] uppercase tracking-widest font-bold font-mono">

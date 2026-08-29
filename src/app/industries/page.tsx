@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -70,11 +71,12 @@ export default function Industries() {
             >
               {/* Picture Header */}
               <div className="aspect-[16/10] overflow-hidden border-b border-white/5 relative bg-[#050505]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={ind.image}
                   alt={ind.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
 

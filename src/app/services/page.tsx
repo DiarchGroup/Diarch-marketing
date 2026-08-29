@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Leaf } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -70,12 +71,13 @@ export default function Services() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Visual Image */}
                 <div className={`lg:col-span-5 ${idx % 2 === 1 ? "lg:order-last" : ""}`}>
-                  <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 shadow-md bg-[#050505]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 shadow-md bg-[#050505]">
+                    <Image
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      fill
+                      sizes="(min-width: 1024px) 40vw, 100vw"
+                      className="object-cover hover:scale-105 transition-transform duration-700"
                     />
                   </div>
                 </div>

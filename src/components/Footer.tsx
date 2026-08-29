@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const sections = {
@@ -29,10 +30,11 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               <div className="w-8 h-8 rounded-lg overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/logo.png"
-                  alt="DiArch Marketing Logo"
+                  alt="Diarch Marketing Logo"
+                  width={32}
+                  height={32}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -47,9 +49,9 @@ export default function Footer() {
               Pioneering custom-branded paper bag advertising and eco-friendly packaging solution ecosystems for retail, e-commerce, food delivery, and FMCG brands.
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Twitter</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://www.instagram.com/diarchmarketing" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
+              <a href="https://twitter.com/diarchmarketing" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Twitter</a>
+              <a href="https://www.linkedin.com/company/diarchmarketing" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
             </div>
           </div>
 

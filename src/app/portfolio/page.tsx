@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, BarChart3, Users, Leaf, Sparkles } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
@@ -8,7 +9,7 @@ export default function Portfolio() {
       title: "Zesty Bites Cloud Kitchens",
       category: "Food Delivery & takeaway",
       metric: "45% Spill Reduction & Zero Tears",
-      description: "Zesty Bites, a national cloud kitchen group, was experiencing high customer complaints due to thin plastic carriers tearing or food containers tipping over in transit on food delivery apps. DiArch engineered a grease-resistant white Kraft bag with an extra-wide rectangular bottom base (anti-tip) and flat-glued handles.",
+      description: "Zesty Bites, a national cloud kitchen group, was experiencing high customer complaints due to thin plastic carriers tearing or food containers tipping over in transit on food delivery apps. Diarch engineered a grease-resistant white Kraft bag with an extra-wide rectangular bottom base (anti-tip) and flat-glued handles.",
       results: [
         "Transitioned 100% of packaging to fully biodegradable paper",
         "45% reduction in delivery leakage complaints",
@@ -21,7 +22,7 @@ export default function Portfolio() {
       title: "Aura Boutique Luxury Retail",
       category: "Fashion & Luxury",
       metric: "30% Increase in Instagram Mentions",
-      description: "Aura Boutique wanted their physical shopping packaging to match the high-end luxury feel of their fashion boutique products. DiArch manufactured an ultra-premium matte black carrier using 220 GSM specialty board, featuring gold-leaf foil embossed branding and heavy-gauge silk braided rope handles.",
+      description: "Aura Boutique wanted their physical shopping packaging to match the high-end luxury feel of their fashion boutique products. Diarch manufactured an ultra-premium matte black carrier using 220 GSM specialty board, featuring gold-leaf foil embossed branding and heavy-gauge silk braided rope handles.",
       results: [
         "Premium touchpoint that consumers frequently reuse as daily tote bags",
         "30% boost in customer unboxing photos and tags on social channels",
@@ -34,7 +35,7 @@ export default function Portfolio() {
       title: "EcoCart Hyper-Local Grocery",
       category: "Grocery & Supermarket",
       metric: "100% Plastic-Ban Compliance",
-      description: "EcoCart, a hyper-local grocery platform, needed a robust, high-volume carrier to handle heavy grocery delivery runs (heavy glass bottles, vegetables, canned products) while complying with regional plastic ban regulations. DiArch supplied high-load capacity 130 GSM brown Kraft paper bags with reinforced twisted handles.",
+      description: "EcoCart, a hyper-local grocery platform, needed a robust, high-volume carrier to handle heavy grocery delivery runs (heavy glass bottles, vegetables, canned products) while complying with regional plastic ban regulations. Diarch supplied high-load capacity 130 GSM brown Kraft paper bags with reinforced twisted handles.",
       results: [
         "100% regulatory compliance achieved across all delivery hubs",
         "Bags certified to support up to 12kg of grocery products",
@@ -59,7 +60,7 @@ export default function Portfolio() {
               <span className="text-white/20 italic">Stories.</span>
             </h1>
             <p className="text-gray-400 text-lg font-light leading-relaxed max-w-2xl mx-auto">
-              Real metrics, packaging performance, and local marketing ROI achieved by brands deploying DiArch paper carrier lines.
+              Real metrics, packaging performance, and local marketing ROI achieved by brands deploying Diarch paper carrier lines.
             </p>
           </Reveal>
         </div>
@@ -75,11 +76,12 @@ export default function Portfolio() {
               {/* Image Side */}
               <div className={`lg:col-span-5 ${idx % 2 === 1 ? "lg:order-last" : ""}`}>
                 <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 group shadow-2xl relative bg-[#0a0a0a]">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={cs.image}
                     alt={cs.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    fill
+                    sizes="(min-width: 1024px) 40vw, 100vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute top-4 left-4 bg-black/75 backdrop-blur-md border border-white/10 px-4 py-1.5 rounded-full">
                     <span className="text-[10px] uppercase tracking-widest text-[#FF4500] font-semibold font-mono">

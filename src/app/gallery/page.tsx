@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 export default function Gallery() {
@@ -84,11 +85,12 @@ export default function Gallery() {
               className="group cursor-pointer"
             >
               <div className="aspect-square rounded-3xl overflow-hidden border border-white/5 group-hover:border-white/25 transition-all duration-500 bg-[#0f0f0f] relative shadow-lg">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-black/60 backdrop-blur-md border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <span className="text-[9px] uppercase tracking-widest text-[#FF4500] font-bold font-mono">
